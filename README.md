@@ -65,7 +65,7 @@ Add to medusa-config.js
 
 ```javascript
 {
-  resolve: `medusa-fulfillment-shippo`,
+  resolve: `medusa-fulfillment-shippo-extended`,
     options: {
       api_key: SHIPPO_API_KEY,
       weight_unit_type: 'g', // valid values: g, kg, lb, oz

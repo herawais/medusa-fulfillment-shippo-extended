@@ -4,7 +4,7 @@ import { getConfigFile, humanizeAmount } from "medusa-core-utils"
 const {
   configModule: { projectConfig, plugins },
 } = getConfigFile(path.resolve("."), "medusa-config")
-const config = plugins.find((e) => e.resolve === "medusa-fulfillment-shippo")
+const config = plugins.find((e) => e.resolve === "medusa-fulfillment-shippo-extended")
 const options = config?.options ?? projectConfig
 
 /** Makes a flat product object from a LineItem

@@ -94,7 +94,7 @@ class ShippoPackageService extends BaseService {
     const cart = cartOrId?.items
       ? cartOrId
       : await this.#cartService.retrieve(cartOrId, {
-          relations: ["items"],
+          relations: ["items", "items.variant", "items.variant.product"],
         })
     this.#setItems(this.#prepareItems(cart.items))
     return this.#binpack()
